@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <title>ANSekolah</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="navbar">
+        <a href="#">ANSekolah</a>
+        <!-- TUTORIALS -->
+        <div class="dropdown">
+          <button class="dropbtn">
+            Panduan
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JAVASCRIPT</a>
+          </div>
+        </div>
+        <!-- EXERCISES -->
+        <div class="dropdown">
+          <button class="dropbtn">
+            Latihan
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JAVASCRIPT</a>
+          </div>
+          <!-- CERTIFICATES -->
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Sertifikat
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JAVASCRIPT</a>
+          </div>
+        </div>
+        <!-- SERVICES -->
+        <div class="dropdown">
+          <button class="dropbtn">
+            Layanan
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Panduan Gratis</a>
+            <a href="#">Dapatkan Sertifikat</a>
+            <a href="#">Buat Website</a>
+          </div>
+        </div>
+
+        <!-- Search -->
+        <div class="small">
+          <form class="search">
+            <input type="text" class="small-input" placeholder="Ketik disini..." />
+            <button type="submit" class="small-button">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Sign In & Log In -->
+      </div>
+      <div class="login">
+        <button class="sign-up">Daftar</button>
+        <button class="log-in">Masuk</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="container">
+        <article>
+          <h1>Belajar Coding</h1>
+          <p>
+            Platform ini dibuat untuk kalian yang ingin mempelajari<br />
+            dokumentasi bahasa program dalam bahasa indonesia
+          </p>
+          <!-- Large Search -->
+          <div class="large">
+            <form class="search">
+              <input
+                type="text"
+                class="large-input"
+                placeholder="Cari tutorial kami, misalnya HTML" />
+              <button type="submit" class="large-button">
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+              </button>
+            </form>
+          </div>
+          <a href="#">Tidak Yakin Harus Mulai Dari Mana?</a>
+        </article>
+      </div>
+      <!-- Supporting Content -->
+      <!-- html -->
+      <div class="content html">
+        <article>
+          <aside class="card1">
+            <h1>HTML</h1>
+            <p>mengatur struktur/kerangka halaman</p>
+            <button class="yellow">Belajar HTML</button>
+            <button class="green">Video Panduan</button>
+            <button class="magenta">Referensi HTML</button>
+            <button class="black">Dapatkan Sertifikat</button>
+          </aside>
+          <aside class="card2">
+            <form action="post">
+              <label for="">Contoh HTML:</label>
+              <p>
+                &lt;!DOCTYPE html&gt;<br />
+                &lt;html&gt;<br />
+                &lt;head&gt;<br />
+                &lt;title&gt;HTML Tutorial&lt;/title&gt;<br />
+                &lt;/head&gt;<br />
+                &lt;body&gt;<br />
+                &lt;h1&gt;This is a heading&lt;/h1&gt;<br />
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;<br />
+                &lt;/body&gt;<br />
+                &lt;/html&gt;
+              </p>
+              <button>Cobalah Sendiri</button>
+            </form>
+          </aside>
+        </article>
+      </div>
+      <!-- css -->
+      <div class="content css">
+        <article>
+          <aside class="card1">
+            <h1>CSS</h1>
+            <p>menata tampilan dan layout halaman</p>
+            <button class="yellow">Belajar CSS</button>
+            <button class="green">Video Panduan</button>
+            <button class="magenta">Referensi CSS</button>
+            <button class="black">Dapatkan Sertifikat</button>
+          </aside>
+          <aside class="card2">
+            <form action="post">
+              <label for="">Contoh CSS:</label>
+              <p>
+                body &#123; <br />
+                &nbsp;&nbsp;background-color: lightblue;<br />
+                &#125;<br /><br />
+
+                h1 &#123;<br />
+                &nbsp;&nbsp;color: white;<br />
+                &nbsp;&nbsp;text-align: center;<br />
+                &#125;<br /><br />
+
+                p &#123;<br />
+                &nbsp;&nbsp;font-family: verdana;<br />
+                &#125;
+              </p>
+              <button>Cobalah Sendiri</button>
+            </form>
+          </aside>
+        </article>
+      </div>
+      <!-- js -->
+      <div class="content js">
+        <article>
+          <aside class="card1">
+            <h1>JavaScript</h1>
+            <p>interaktivitas dan fungsionalitas pada halaman</p>
+            <button class="yellow">Belajar JavaScript</button>
+            <button class="green">Video Panduan</button>
+            <button class="magenta">Referensi JavaScript</button>
+            <button class="black">Dapatkan Sertifikat</button>
+          </aside>
+          <aside class="card2">
+            <form action="post">
+              <label for="">Contoh JavaScript:</label>
+              <p>
+              &lt;button onclick=&quot;myFunction()&quot;&gt;Click Me!&lt;/button&gt;<br><br>
+              
+              &lt;script&gt;<br>
+              function myFunction() {<br>
+              let x = document.getElementById(&quot;demo&quot;);<br>
+              x.style.fontSize = &quot;25px&quot;;<br>
+              x.style.color = &quot;red&quot;;<br>
+              }<br>
+              &lt;/script&gt;
+
+              </p>
+              <button>Cobalah Sendiri</button>
+            </form>
+          </aside>
+        </article>
+      </div>
+    </main>
+
+    <!-- Contact Person -->
+    <footer>
+      <h3>
+        Website ini dibuat dengan sepenuh hati💖
+      </h3>
+    </footer>
+  </body>
+</html>
