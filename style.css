@@ -10,23 +10,24 @@ body {
 }
 
 /* NAVBAR */
-header {
+header .navbar {
   display: flex;
   background-color: rgb(0, 0, 37);
   width: 100%;
   height: auto;
   position: fixed;
+  flex-shrink: 5;
+  flex-direction: row;
+  height: 10vh;
+  text-align: center;
+  justify-content: center;
+  flex-shrink: 5;
 }
 
 /* LOGO STYLE */
-.navbar {
-  display: flex;
-  flex-direction: row;
-  height: 60px;
-  text-align: center;
-}
+
 .logo {
-  float: left;
+  /* float: left; */
   font-size: 1.8rem;
   font-weight: 700;
   color: #5ce1e6;
@@ -34,6 +35,8 @@ header {
   margin: 10px;
   padding-left: 10px;
   text-align: center;
+  flex-shrink: 1;
+
 }
 .logo:hover {
   color: white;
@@ -47,6 +50,8 @@ header {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  /* flex-shrink: 1; */
+
 }
 
 .dropdown:hover .dropbtn {
@@ -55,7 +60,7 @@ header {
 }
 
 .dropdown-content a {
-  float: none;
+  /* float: none; */
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -67,6 +72,9 @@ header {
   float: left;
   overflow: hidden;
 }
+.menu{
+  display: none;
+}
 
 .dropdown .dropbtn {
   font-size: 1rem;
@@ -77,6 +85,7 @@ header {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  /* width: 100%; */
 }
 .dropdown-content a:hover {
   background-color: #ddd;
@@ -99,12 +108,12 @@ input[type="text"].small-input {
   padding: 10px;
   width: 15vw;
   font-size: 1rem;
-  float: left;
+  /* float: left; */
   border: none;
 }
 button[type="submit"].small-button {
   border-radius: 0 50px 50px 0;
-  float: left;
+  /* float: left; */
   padding: 10px;
   background-color: white;
   color: black;
@@ -127,14 +136,23 @@ button[type="submit"].small-button {
 
 /* LOGIN STYLE */
 .login {
+  margin-right: 1%;
+  margin: auto;
   display: flex;
   flex-direction: row;
-  flex-grow: 5;
+  /* flex-grow: 5; */
   justify-content: flex-end;
   align-items: center;
-  margin-right: 20px;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+  /* min-height: 60%;
+  min-width: 25%; */
+  height: auto;
+  width: auto;
+  background-color: red;
 }
 .login button {
+  
   border: none;
   padding: 10px 20px;
   margin: 10px 0;
@@ -173,11 +191,12 @@ button.log-in {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 90vh;
+  height: 110vh;
   background-image: url(assets/img/Background.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto;
   background-position: center;
+  flex-shrink: 1;
 }
 
 .container article {
@@ -204,7 +223,8 @@ button.log-in {
   font-weight: 700;
 }
 .large form {
-  max-width: 1300px;
+  background-color: red;
+  max-width: auto;
   height: 8vh;
   display: flex;
   justify-content: center;
@@ -216,7 +236,7 @@ button.log-in {
   width: 40vw;
   border-radius: 50px 0 0 50px;
   border: none;
-  padding-left: 30px;
+  padding-left: 15px;
   font-size: 1.3rem;
 }
 .large form button[type="submit"] {
@@ -244,20 +264,22 @@ button.log-in {
 }
 .content {
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .content article {
   display: flex;
   align-items: start;
   justify-content: center;
-  padding-top: 5rem;
+  padding-top: 3rem;
   gap: 5rem;
+  flex-flow: row nowrap;
+  flex-shrink: 1;
 }
 article {
   display: flex;
   flex-direction: row;
-  width: auto;
+  width: 100;
 }
 
 .card1 {
@@ -266,10 +288,10 @@ article {
   align-items: center;
   justify-content: center;
   gap: 25px;
-  width: 30vw;
+  width: auto;
   height: 60vh;
-  margin-top: 20px;
-  /* background-color: crimson; */
+  flex-shrink: 1;
+  /* background-color: red; */
 }
 
 .content article aside h1 {
@@ -278,29 +300,43 @@ article {
   font-weight: 600;
 }
 .content article aside button {
-  width: 16vw;
+  width: 70% ;
+  /* min-width: auto; */
   height: 7vh;
   padding: 10px;
   border: none;
   border-radius: 50px;
   font-size: 1.2rem;
+  flex-shrink: 5;
 }
-.content article aside button:hover {
-  background-color: red;
-}
+
 .yellow {
   background-color: #5ce1e6;
 }
+.yellow:hover{
+  background-color: rgb(0, 144, 180);
+}
 .green {
-  background-color: darkgreen;
+  background-color: rgb(0, 118, 0);
   color: #fff;
+}
+.green:hover{
+    background-color: rgb(0, 58, 0);
+
 }
 .magenta {
   background-color: magenta;
 }
+.magenta:hover {
+  background-color: rgb(170, 1, 170);
+}
 .black {
   background-color: #000;
   color: #fff;
+}
+.black:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 .card2 {
   display: flex;
@@ -309,6 +345,7 @@ article {
   height: auto;
   background-color: rgb(64, 64, 64);
   border-radius: 5px;
+  margin-bottom: 3rem;
 }
 .card2 form {
   display: flex;
@@ -323,22 +360,28 @@ article {
   font-size: 1.3rem;
   font-weight: 600;
 }
-.card2 form p {
+.card2 form img {
   width: 30vw;
-  height: 50vh;
-  margin-inline: 15px;
-  background-color: #000;
-  color: white;
-  overflow: auto;
-  font-size: 0.9rem;
-  padding: 15px;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  margin-inline: 1rem;
 }
 
 .card2 form button {
   background-color: #5ce1e6;
+  padding: 0;
   margin: 20px 15px;
+  max-width: 50%;
+}
+.card2 form button:hover{
+  background-color: #01878c;
+  color: white;
+  transition: ease-in-out 0.2s ;
 }
 
+/* FOOTER */
 footer {
   background-color: rgb(0, 0, 37);
   width: auto;
@@ -382,4 +425,57 @@ footer {
 }
 .footer-kanan p {
   margin-bottom: 0.3rem;
+}
+@media screen and (max-width:768px) {
+  .content article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .navbar {
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    justify-content: center;
+    gap: 10px;
+  }
+  .logo{
+    font-size: 1.2rem;
+    /* flex-shrink: 1; */
+  }
+  .card2{
+    display: none;
+  }
+  .dropdown{
+    display: none;
+  }
+  .login .sign-up{
+    display: none;
+  }
+  .login .log-in{
+    border-radius: 50px;
+  }
+  .small{
+    width: auto;
+  }
+  .small .search input{
+    /* width: auto; */
+    display: none;
+  }
+  .small .search button{
+border-radius: 50px;
+  }
+  .small form{
+    margin-inline: 10px;
+  }
+  
+  .menu{
+    display: block;
+  }
+  .card1 button{
+    flex-wrap: nowrap;
+    min-width: 70%;
+    flex-shrink: 1;
+    
+
+  }
 }
